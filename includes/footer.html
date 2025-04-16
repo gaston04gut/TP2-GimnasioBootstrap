@@ -1,0 +1,67 @@
+<footer class="footer mt-5">
+  <div class="container-fluid">
+    <div class="row" id="contacto">
+      <div class="col-12 col-md-6">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <div class="col-12 mx-auto">
+          <form id="contactoForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+              <div class="invalid-feedback">
+                Por favor ingresa tu nombre.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">
+                Por favor ingresa un email válido.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" required>
+              <div class="invalid-feedback">
+                Por favor ingresa tu número de teléfono.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+              <div class="invalid-feedback">
+                Por favor ingresa tu mensaje.
+              </div>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary" id="submitBtn">
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                Enviar Mensaje
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <h2 class="text-center mb-4">Ubicación</h2>
+        <div class="col-12 mx-auto">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.698031782247!2d-58.37814548417401!3d-34.61525006555699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad2f1d6c4b7%3A0x2c6f1b4b5c8b8f0a!2sAv.%209%20de%20Julio%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sar!4v1625678901234!5m2!1ses!2sar"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <p class="text-white mb-0">© 2024 PAPOTA GYM. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>

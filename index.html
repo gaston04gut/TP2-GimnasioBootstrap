@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header>
+        <div class="header"></div>
+      </header>
+      <div class="row position-relative">
+        <div class="col-12 p-0">
+          <div class="video-container">
+            <video class="video-background" src="video/gymvideo.mp4" autoplay muted loop></video>
+            <div class="overlay"></div>
+          </div>
+          <div class="hero-content text-center">
+            <div class="hero-text">
+              <h1 class="animate__animated animate__fadeIn">SUMATE CON LOS MEJORES</h1>
+              <h1 class="animate__animated animate__fadeIn animate__delay-1s">TU PUEDES HACERLO</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-4" id="clasesDestacadas">
+        <h1 class="h1">Nuestras Clases Destacadas</h1>
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card clase-card">
+            <img src="img/boxeo.png" class="card-img-top" alt="Boxeo" />
+            <div class="card-body">
+              <h5 class="card-title">Boxeo</h5>
+              <p class="card-text">
+                Entrenamiento de boxeo para mejorar tu condición física, fuerza y técnicas de combate con instructores profesionales.
+              </p>
+              <a href="#" class="btn btn-primary">+Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card clase-card">
+            <img src="img/yoga.png" class="card-img-top" alt="Yoga" />
+            <div class="card-body">
+              <h5 class="card-title">Yoga</h5>
+              <p class="card-text">
+                Clases de yoga para mejorar la flexibilidad, fuerza y equilibrio
+                mental.
+              </p>
+              <a href="#" class="btn btn-primary">+Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card clase-card">
+            <img src="img/spinning.png" class="card-img-top" alt="Spinning" />
+            <div class="card-body">
+              <h5 class="card-title">Spinning</h5>
+              <p class="card-text">
+                Entrenamiento cardiovascular intenso en bicicletas estáticas con
+                música motivadora.
+              </p>
+              <a href="#" class="btn btn-primary">+Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row" id="contador">
+        <div class="col-12">
+          <div class="contador-animado">
+            <div class="contador-item">
+              <div class="text-center">
+                <span class="text"
+                  >¡¡Mas de <span class="numero">0</span> Clientes
+                  Satisfechos!!</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row carousel-section" id="testimonios">
+        <div class="col-12">
+          <h2 class="text-center mb-4">Testimonios de Nuestros Clientes</h2>
+          <div class="col-12 col-md-8 mx-auto">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <div class="testimonio-card">
+                    <div class="testimonio-content">
+                      <h5>Experiencia Transformadora</h5>
+                      <p class="testimonio-texto">
+                        "Desde que me uní a PAPOTA GYM, mi vida ha cambiado completamente. Los entrenadores son increíbles y el ambiente es muy motivador."
+                      </p>
+                      <div class="testimonio-autor">
+                        <span class="nombre">María González</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="testimonio-card">
+                    <div class="testimonio-content">
+                      <h5>Resultados Increíbles</h5>
+                      <p class="testimonio-texto">
+                        "En solo 3 meses, he visto cambios sorprendentes. Las clases son desafiantes pero divertidas, y la comunidad es fantástica."
+                      </p>
+                      <div class="testimonio-autor">
+                        <span class="nombre">Juan Pérez</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="testimonio-card">
+                    <div class="testimonio-content">
+                      <h5>El Mejor Gimnasio</h5>
+                      <p class="testimonio-texto">
+                        "Las instalaciones son de primera clase y el equipo siempre está limpio y bien mantenido. ¡No cambiaría PAPOTA GYM por nada!"
+                      </p>
+                      <div class="testimonio-autor">
+                        <span class="nombre">Laura Martínez</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer"></div>
+      </footer>
+    </div>
+
+    <script src="js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
