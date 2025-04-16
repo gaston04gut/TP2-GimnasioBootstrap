@@ -1,24 +1,24 @@
-.logo{
+.logo {
   font-family: "Franklin Gothic Heavy";
   font-weight: bold;
   font-size: 30px;
 }
-.logo a{
+.logo a {
   color: white;
   text-decoration: none;
 }
-#header{
+#header {
   background-color: rgb(30, 30, 30);
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(138, 43, 226, 0.3);
 }
-#header a{
+#header a {
   font-size: 22px;
 }
 body {
-  padding-top: 56px; 
+  padding-top: 56px;
   background-color: rgb(20, 20, 20);
   color: white;
 }
@@ -30,7 +30,6 @@ body {
 .navbar {
   padding: 15px 0;
   background-color: rgb(34, 34, 34) !important;
-
 }
 
 .navbar-brand {
@@ -144,7 +143,7 @@ body {
   }
 }
 
-.btn-primary{
+.btn-primary {
   background-color: blueviolet;
   font-weight: bold;
   border: none;
@@ -152,13 +151,13 @@ body {
   transition: all 0.3s ease;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: rgb(107, 43, 182);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(138, 43, 226, 0.4);
 }
 
-#clasesDestacadas{
+#clasesDestacadas {
   background-color: rgb(46, 46, 46);
   color: white;
   border-radius: 10px;
@@ -174,14 +173,14 @@ body {
   font-weight: bold;
 }
 
-.card-title{
+.card-title {
   font-weight: bold;
   font-size: 30px;
   text-align: center;
   color: white;
 }
 
-.card-body{
+.card-body {
   text-align: center;
   font-size: 19px;
   background-color: rgb(30, 30, 30);
@@ -189,13 +188,13 @@ body {
   border-radius: 0 0 10px 10px;
 }
 
-.card-img-top{
+.card-img-top {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.card{
+.card {
   margin: 0 20px;
   border-radius: 10px;
   background-color: rgb(40, 40, 40);
@@ -203,12 +202,12 @@ body {
   transition: all 0.3s ease;
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(138, 43, 226, 0.3);
   border-color: blueviolet;
 }
-#contador{
+#contador {
   background-color: rgb(46, 46, 46);
   color: white;
   border-radius: 10px;
@@ -217,22 +216,21 @@ body {
   box-shadow: 0 2px 10px rgba(138, 43, 226, 3);
 }
 
-.contador-animado{
+.contador-animado {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
-.numero{
+.numero {
   font-size: 40px;
   font-weight: bold;
   color: blueviolet;
 }
-.text{
+.text {
   font-size: 30px;
   font-weight: bold;
   color: white;
- 
 }
 /* Estilos para el carrusel */
 #testimonios {
@@ -320,15 +318,15 @@ body {
     margin: 5px;
     padding: 15px;
   }
-  
+
   .testimonio-content {
     padding: 10px;
   }
-  
+
   .testimonio-content h5 {
     font-size: 1.5rem;
   }
-  
+
   .testimonio-texto {
     font-size: 1.1rem;
     padding: 0 10px;
@@ -397,11 +395,11 @@ body {
   #contacto h2 {
     font-size: 2rem;
   }
-  
+
   .form-label {
     font-size: 1.1rem;
   }
-  
+
   .form-control {
     font-size: 1rem;
     padding: 0.5rem 0.75rem;
@@ -549,7 +547,7 @@ body {
   .masonry {
     column-count: 2;
   }
-  
+
   .clase-info {
     margin-bottom: 30px;
   }
@@ -559,17 +557,17 @@ body {
   .masonry {
     column-count: 1;
   }
-  
+
   .filtros {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .filtros label {
     width: 100%;
     text-align: center;
   }
-  
+
   .clase {
     padding: 15px;
   }
@@ -592,28 +590,77 @@ body {
 
 .table {
   margin-bottom: 0;
-  border-color: rgba(255, 255, 255, 0.1);
+  --bs-table-bg: transparent;
+  --bs-table-color: #fff;
 }
 
 .table thead th {
-  background-color: blueviolet;
-  color: white;
-  border: none;
-  padding: 15px;
-  text-align: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid blueviolet;
+}
+
+.table tbody th {
+  font-weight: 500;
+  color: #fff;
+}
+
+.table td {
+  color: #fff;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(138, 43, 226, 0.15);
+  --bs-table-accent-bg: none;
+}
+
+.table-active,
+.table-active > td,
+.table-active > th {
+  background-color: rgba(138, 43, 226, 0.2) !important;
+}
+
+/* Estilos para los precios */
+.precio-mensual,
+.precio-anual {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+/* Estilos para los iconos */
+.bi-check-lg {
+  color: #00ff9d;
   font-size: 1.2rem;
 }
 
-.table tbody td {
-  padding: 12px;
-  text-align: center;
-  vertical-align: middle;
-  border-color: rgba(255, 255, 255, 0.1);
-  font-size: 1.1rem;
+.bi-x-lg {
+  color: #ff4d4d;
+  font-size: 1.2rem;
 }
 
-.table tbody tr:hover {
-  background-color: rgba(138, 43, 226, 0.1);
+/* Estilos para los tooltips */
+.tooltip .tooltip-inner {
+  background-color: #1a1a1a;
+  border: 1px solid blueviolet;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.tooltip .tooltip-arrow::before {
+  border-top-color: blueviolet;
+}
+
+/* Estilos para los bordes de la tabla */
+.table > :not(:first-child) {
+  border-top: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.table td,
+.table th {
+  border-bottom: 1px solid rgba(138, 43, 226, 0.1);
 }
 
 /* Ajustes responsivos para la tabla */
@@ -631,8 +678,383 @@ body {
     padding: 6px;
     font-size: 0.8rem;
   }
-  
+
   #horarios h2 {
     font-size: 2rem;
   }
+}
+
+/* Estilos para la sección de entrenadores */
+.entrenadores-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.entrenadores-section h2 {
+  color: #6f42c1;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las tarjetas flip */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 550px;
+  perspective: 1000px;
+  margin-bottom: 2rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 0;
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 10px 10px 0 0;
+}
+
+.flip-card-front .info {
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card-front h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.flip-card-back h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.skills p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-value {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.progress {
+  height: 10px;
+  margin-bottom: 1.5rem;
+  background-color: rgb(46, 46, 46);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: blueviolet;
+  transition: width 1.5s ease-in-out;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.rating label {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ccc;
+  transition: color 0.3s;
+  margin: 0 5px;
+}
+
+.rating input:checked ~ label {
+  color: gold;
+}
+
+/* Estilos para la sección de precios */
+#precios {
+  background-color: rgb(46, 46, 46);
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(138, 43, 226, 0.3);
+}
+
+#precios h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+.table-responsive {
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(138, 43, 226, 3);
+}
+.table-responsive th {
+  padding-left: 14px;
+}
+/* Estilos para el toggle switch */
+.form-check-input {
+  width: 3.5rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: rgb(34, 34, 34);
+  border: 2px solid rgb(12, 0, 24);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.form-check-input:focus {
+  border-color: rgb(12, 0, 24);
+  box-shadow: 0 0 0 0.25rem rgba(138, 43, 226, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: rgb(12, 0, 24);
+  border-color: rgb(12, 0, 24);
+}
+
+.form-check-input:before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  top: 50%;
+  left: 0.15rem;
+  transform: translateY(-50%);
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.form-check-input:checked:before {
+  left: calc(100% - 1.65rem);
+}
+
+.form-check-label {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.form-check-label:hover {
+  color: rgb(47, 0, 90);
+}
+
+/* Contenedor del toggle */
+.form-switch {
+  padding: 1rem;
+  background-color: rgb(34, 34, 34);
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+#planToggle {
+  width: 60px;
+}
+#precio{
+  background-color: rgb(34, 34, 34);
+  box-shadow: 0 2px 10px rgba(138, 43, 226, 3);
+}
+#precio span{
+  color: rgb(255, 255, 255);
+}
+.table-responsive i{
+  cursor: help;
+}
+
+/* Estilos para el Blog */
+.blog-container {
+  background-color: rgb(46, 46, 46);
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(138, 43, 226, 0.3);
+}
+
+.blog-header h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+.blog-header .lead {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+}
+
+/* Grid de Artículos */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.blog-post {
+  grid-column: span 4;
+}
+
+.blog-post.featured {
+  grid-column: span 12;
+}
+
+/* Estilos de las Tarjetas */
+.blog-post .card {
+  background-color: rgb(34, 34, 34);
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.blog-post .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(138, 43, 226, 0.3);
+}
+
+.blog-post .card-body {
+  padding: 2rem;
+}
+
+.blog-post .card-title {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.blog-post.featured .card-title {
+  font-size: 2rem;
+}
+
+.blog-post .card-text {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post-meta .badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.post-meta .text-muted {
+  font-size: 0.9rem;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.comments-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Estilos para los Avatares */
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/* Sección de Comentarios */
+.comments-section {
+  background-color: rgb(34, 34, 34);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }

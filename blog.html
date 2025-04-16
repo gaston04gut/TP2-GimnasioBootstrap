@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Fitness - Papota Gym</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header>
+        <div class="header"></div>
+      </header>
+
+      <main class="blog-container py-5">
+        <div class="container">
+          <!-- Header del Blog -->
+          <div class="blog-header text-center mb-5" data-aos="fade-down">
+            <h1 class="display-4">Blog Fitness</h1>
+            <p class="lead">
+              Consejos, rutinas y noticias del mundo del fitness
+            </p>
+          </div>
+
+          <!-- Filtros por Tags -->
+          <div class="tags-filter mb-5" data-aos="fade-up">
+            <div class="btn-group" role="group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="tagFilter"
+                id="all"
+                checked
+              />
+              <label class="btn btn-outline-light" for="all">Todos</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="tagFilter"
+                id="nutrition"
+              />
+              <label class="btn btn-outline-light" for="nutrition"
+                >Nutrición</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="tagFilter"
+                id="training"
+              />
+              <label class="btn btn-outline-light" for="training"
+                >Entrenamiento</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="tagFilter"
+                id="lifestyle"
+              />
+              <label class="btn btn-outline-light" for="lifestyle"
+                >Estilo de Vida</label
+              >
+            </div>
+          </div>
+
+          <!-- Grid de Artículos -->
+          <div class="row g-4">
+            <!-- Artículo Destacado -->
+            <article class="col-12" data-aos="fade-up" data-aos-duration="1000">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-primary">Entrenamiento</span>
+                    <small class="text-muted">15 Marzo 2024</small>
+                  </div>
+                  <h2 class="card-title h4">
+                    Los Mejores Ejercicios para Ganar Masa Muscular
+                  </h2>
+                  <p class="card-text">
+                    Descubre los ejercicios más efectivos para construir músculo
+                    y maximizar tus resultados en el gimnasio. Aprende las
+                    técnicas correctas y cómo estructurar tu rutina para obtener
+                    los mejores resultados.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="JD"></div>
+                      <small>3 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Artículos Regulares -->
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="nutrition"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-success">Nutrición</span>
+                    <small class="text-muted">12 Marzo 2024</small>
+                  </div>
+                  <h3 class="card-title h5">
+                    Alimentación Pre y Post Entrenamiento
+                  </h3>
+                  <p class="card-text">
+                    Aprende qué comer antes y después de tu entrenamiento para
+                    optimizar tus resultados y recuperación muscular.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="AM"></div>
+                      <small>5 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="lifestyle"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-info">Estilo de Vida</span>
+                    <small class="text-muted">10 Marzo 2024</small>
+                  </div>
+                  <h3 class="card-title h5">
+                    Cómo Mantener la Motivación en tu Rutina Fitness
+                  </h3>
+                  <p class="card-text">
+                    Consejos prácticos para mantener la constancia y la
+                    motivación en tu camino fitness.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="LS"></div>
+                      <small>8 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="training"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-primary">Entrenamiento</span>
+                    <small class="text-muted">8 Marzo 2024</small>
+                  </div>
+                  <h3 class="card-title h5">
+                    Rutina de Cardio para Principiantes
+                  </h3>
+                  <p class="card-text">
+                    Una guía completa para iniciarte en el entrenamiento
+                    cardiovascular de manera segura y efectiva.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="CR"></div>
+                      <small>4 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="nutrition"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-success">Nutrición</span>
+                    <small class="text-muted">5 Marzo 2024</small>
+                  </div>
+                  <h3 class="card-title h5">
+                    Suplementos Deportivos: Guía Básica
+                  </h3>
+                  <p class="card-text">
+                    Todo lo que necesitas saber sobre los suplementos más
+                    comunes y cómo pueden ayudarte en tus objetivos.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="SP"></div>
+                      <small>7 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="lifestyle"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-info">Estilo de Vida</span>
+                    <small class="text-muted">3 Marzo 2024</small>
+                  </div>
+                  <h3 class="card-title h5">
+                    El Impacto del Sueño en tu Rendimiento
+                  </h3>
+                  <p class="card-text">
+                    Descubre por qué el descanso es crucial para tu progreso en
+                    el gimnasio y cómo optimizarlo.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="SL"></div>
+                      <small>6 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="training"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-primary">Entrenamiento</span>
+                    <small class="text-muted">1 Marzo 2024</small>
+                  </div>
+                  <h3 class="card-title h5">
+                    Técnicas Avanzadas de Levantamiento
+                  </h3>
+                  <p class="card-text">
+                    Mejora tu técnica en los ejercicios compuestos principales y
+                    evita lesiones comunes.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="TL"></div>
+                      <small>9 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="nutrition"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-success">Nutrición</span>
+                    <small class="text-muted">28 Febrero 2024</small>
+                  </div>
+                  <h3 class="card-title h5">
+                    Dietas Populares: Análisis Comparativo
+                  </h3>
+                  <p class="card-text">
+                    Comparativa detallada de las dietas más populares y su
+                    efectividad para diferentes objetivos.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="DP"></div>
+                      <small>11 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="lifestyle"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-info">Estilo de Vida</span>
+                    <small class="text-muted">25 Febrero 2024</small>
+                  </div>
+                  <h3 class="card-title h5">Manejo del Estrés y Fitness</h3>
+                  <p class="card-text">
+                    Cómo el ejercicio puede ayudarte a manejar el estrés y
+                    mejorar tu bienestar mental.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="ES"></div>
+                      <small>7 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="training"
+              data-aos="fade-up"
+              data-aos-delay="900"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-primary">Entrenamiento</span>
+                    <small class="text-muted">22 Febrero 2024</small>
+                  </div>
+                  <h3 class="card-title h5">Rutina de Fuerza para Mujeres</h3>
+                  <p class="card-text">
+                    Programa de entrenamiento específico diseñado para mujeres
+                    que buscan ganar fuerza y tonificar.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="RF"></div>
+                      <small>15 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="nutrition"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-success">Nutrición</span>
+                    <small class="text-muted">20 Febrero 2024</small>
+                  </div>
+                  <h3 class="card-title h5">
+                    Hidratación y Rendimiento Deportivo
+                  </h3>
+                  <p class="card-text">
+                    La importancia de la hidratación en el rendimiento deportivo
+                    y cómo calcular tus necesidades.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="HD"></div>
+                      <small>6 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="col-12 col-md-6 col-lg-4"
+              data-tags="lifestyle"
+              data-aos="fade-up"
+              data-aos-delay="1100"
+            >
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="post-meta mb-2">
+                    <span class="badge bg-info">Estilo de Vida</span>
+                    <small class="text-muted">18 Febrero 2024</small>
+                  </div>
+                  <h3 class="card-title h5">Fitness en Casa: Guía Completa</h3>
+                  <p class="card-text">
+                    Cómo mantener tu rutina de ejercicios desde casa sin
+                    necesidad de equipamiento costoso.
+                  </p>
+                  <div class="post-footer">
+                    <a href="#" class="btn btn-primary">Leer Más</a>
+                    <div class="comments-preview">
+                      <div class="avatar" data-initial="FC"></div>
+                      <small>12 comentarios</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Sección de Comentarios (Ejemplo) -->
+          <div class="comments-section mt-5" data-aos="fade-up">
+            <h3 class="mb-4">Comentarios</h3>
+            <div class="comment">
+              <div class="avatar" data-initial="JD"></div>
+              <div class="comment-content">
+                <div class="comment-header">
+                  <strong>Juan Díaz</strong>
+                  <small class="text-muted">hace 2 días</small>
+                </div>
+                <p>
+                  Excelente artículo, muy informativo. ¿Podrías recomendar
+                  alguna rutina específica para principiantes?
+                </p>
+                <div class="comment-actions">
+                  <button class="btn btn-sm btn-outline-primary reply-btn">
+                    Responder
+                  </button>
+                  <button class="btn btn-sm btn-outline-secondary like-btn">
+                    <i class="bi bi-hand-thumbs-up"></i> <span id="like-count">12</span> 
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments-section mt-5" data-aos="fade-up">
+            <h3 class="mb-4">Comentarios</h3>
+            <div class="comment">
+              <div class="avatar" data-initial="GP"></div>
+              <div class="comment-content">
+                <div class="comment-header">
+                  <strong>Gonzalo Perez</strong>
+                  <small class="text-muted">hace 2 días</small>
+                </div>
+                <p>
+                  Excelente artículo, muy informativo. ¿Podrías recomendar
+                  alguna rutina específica para principiantes?
+                </p>
+                <div class="comment-actions">
+                  <button class="btn btn-sm btn-outline-primary reply-btn">
+                    Responder
+                  </button>
+                  <button class="btn btn-sm btn-outline-secondary like-btn">
+                    <i class="bi bi-hand-thumbs-up"></i> <span id="like-count">2</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer"></div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
