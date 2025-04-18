@@ -16,165 +16,170 @@
       <header>
         <div class="header"></div>
       </header>
+      <div class="row">
+        <div class="col-12">
+          <section id="precios" class="py-5">
+            <div class="container">
+              <h1 class="text-center mb-5">Nuestros Planes</h1>
 
-      <section id="precios" class="py-5">
-        <div class="container">
-          <h1 class="text-center mb-5">Nuestros Planes</h1>
+              <!-- Toggle Mensual/Anual -->
+              <div class="text-center mb-4">
+                <div class="btn-group" role="group">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="planType"
+                    id="mensual"
+                    checked
+                  />
+                  <label class="btn btn-outline-light" for="mensual"
+                    >Mensual</label
+                  >
 
-          <!-- Toggle Mensual/Anual -->
-          <div class="text-center mb-4">
-            <div class="btn-group" role="group">
-              <input
-                type="radio"
-                class="btn-check"
-                name="planType"
-                id="mensual"
-                checked
-              />
-              <label class="btn btn-outline-light" for="mensual">Mensual</label>
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="planType"
+                    id="anual"
+                  />
+                  <label class="btn btn-outline-light" for="anual">Anual</label>
+                </div>
+              </div>
 
-              <input
-                type="radio"
-                class="btn-check"
-                name="planType"
-                id="anual"
-              />
-              <label class="btn btn-outline-light" for="anual">Anual</label>
+              <!-- Tabla de Precios -->
+              <div class="table-responsive">
+                <table class="table table-hover align-middle text-white">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-center">Planes</th>
+                      <th scope="col" class="text-center">Básico</th>
+                      <th scope="col" class="text-center">Estándar</th>
+                      <th scope="col" class="text-center">Premium</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="precio">
+                      <th scope="row">Precio</th>
+                      <td class="text-center">
+                        <span class="precio-mensual h4">$20.000</span>
+                        <span class="precio-anual h4 d-none">$200.000</span>
+                      </td>
+                      <td class="text-center">
+                        <span class="precio-mensual h4">$50.000</span>
+                        <span class="precio-anual h4 d-none">$500.000</span>
+                      </td>
+                      <td class="text-center">
+                        <span class="precio-mensual h4">$70.000</span>
+                        <span class="precio-anual h4 d-none">$700.000</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Acceso al Gimnasio</th>
+                      <td class="text-center">
+                        <i
+                          class="bi bi-check-lg text-success"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Acceso en horario limitado (8:00 - 22:00)"
+                        ></i>
+                      </td>
+                      <td class="text-center">
+                        <i
+                          class="bi bi-check-lg text-success"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Acceso en horario extendido (6:00 - 23:00)"
+                        ></i>
+                      </td>
+                      <td class="text-center">
+                        <i
+                          class="bi bi-check-lg text-success"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Acceso 24/7"
+                        ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Clases Grupales</th>
+                      <td class="text-center">
+                        <i class="bi bi-x-lg text-danger"></i>
+                      </td>
+                      <td class="text-center">
+                        <i
+                          class="bi bi-check-lg text-success"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="4 clases por mes"
+                        ></i>
+                      </td>
+                      <td class="text-center">
+                        <i
+                          class="bi bi-check-lg text-success"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Clases ilimitadas"
+                        ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Entrenador Personal</th>
+                      <td class="text-center">
+                        <i class="bi bi-x-lg text-danger"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="bi bi-x-lg text-danger"></i>
+                      </td>
+                      <td class="text-center">
+                        <i
+                          class="bi bi-check-lg text-success"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="4 sesiones por mes"
+                        ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Evaluación Física</th>
+                      <td class="text-center">
+                        <i class="bi bi-x-lg text-danger"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="bi bi-x-lg text-danger"></i>
+                      </td>
+                      <td class="text-center">
+                        <i
+                          class="bi bi-check-lg text-success"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Evaluaciones ilimitadas"
+                        ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Acceso a Vestuarios</th>
+                      <td class="text-center">
+                        <i class="bi bi-x-lg text-danger"></i>
+                      </td>
+                      <td class="text-center">
+                        <i class="bi bi-x-lg text-danger"></i>
+                      </td>
+                      <td class="text-center">
+                        <i
+                          class="bi bi-check-lg text-success"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Vestuarios VIP con amenities"
+                        ></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-
-          <!-- Tabla de Precios -->
-          <div class="table-responsive">
-            <table class="table table-hover align-middle text-white">
-              <thead>
-                <tr>
-                  <th scope="col" class="text-center">Planes</th>
-                  <th scope="col" class="text-center">Básico</th>
-                  <th scope="col" class="text-center">Estándar</th>
-                  <th scope="col" class="text-center">Premium</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr id="precio">
-                  <th scope="row">Precio</th>
-                  <td class="text-center">
-                    <span class="precio-mensual h4">$20.000</span>
-                    <span class="precio-anual h4 d-none">$200.000</span>
-                  </td>
-                  <td class="text-center">
-                    <span class="precio-mensual h4">$50.000</span>
-                    <span class="precio-anual h4 d-none">$500.000</span>
-                  </td>
-                  <td class="text-center">
-                    <span class="precio-mensual h4">$70.000</span>
-                    <span class="precio-anual h4 d-none">$700.000</span>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Acceso al Gimnasio</th>
-                  <td class="text-center">
-                    <i
-                      class="bi bi-check-lg text-success"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="Acceso en horario limitado (8:00 - 22:00)"
-                    ></i>
-                  </td>
-                  <td class="text-center">
-                    <i
-                      class="bi bi-check-lg text-success"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="Acceso en horario extendido (6:00 - 23:00)"
-                    ></i>
-                  </td>
-                  <td class="text-center">
-                    <i
-                      class="bi bi-check-lg text-success"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="Acceso 24/7"
-                    ></i>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Clases Grupales</th>
-                  <td class="text-center">
-                    <i class="bi bi-x-lg text-danger"></i>
-                  </td>
-                  <td class="text-center">
-                    <i
-                      class="bi bi-check-lg text-success"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="4 clases por mes"
-                    ></i>
-                  </td>
-                  <td class="text-center">
-                    <i
-                      class="bi bi-check-lg text-success"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="Clases ilimitadas"
-                    ></i>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Entrenador Personal</th>
-                  <td class="text-center">
-                    <i class="bi bi-x-lg text-danger"></i>
-                  </td>
-                  <td class="text-center">
-                    <i class="bi bi-x-lg text-danger"></i>
-                  </td>
-                  <td class="text-center">
-                    <i
-                      class="bi bi-check-lg text-success"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="4 sesiones por mes"
-                    ></i>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Evaluación Física</th>
-                  <td class="text-center">
-                    <i class="bi bi-x-lg text-danger"></i>
-                  </td>
-                  <td class="text-center">
-                    <i class="bi bi-x-lg text-danger"></i>
-                  </td>
-                  <td class="text-center">
-                    <i
-                      class="bi bi-check-lg text-success"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="Evaluaciones ilimitadas"
-                    ></i>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Acceso a Vestuarios</th>
-                  <td class="text-center">
-                    <i class="bi bi-x-lg text-danger"></i>
-                  </td>
-                  <td class="text-center">
-                    <i class="bi bi-x-lg text-danger"></i>
-                  </td>
-                  <td class="text-center">
-                    <i
-                      class="bi bi-check-lg text-success"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="Vestuarios VIP con amenities"
-                    ></i>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
 
       <footer>
         <div class="footer"></div>

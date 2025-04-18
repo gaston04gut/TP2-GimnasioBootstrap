@@ -112,33 +112,36 @@ $(document).ready(function () {
       });
     });
 
-    // Mostrar la primera sección por defecto
-    $('.clase-section').hide();
-    $('.yoga').show();
+    // Mostrar todas las clases por defecto
+    $('.clase-section').show();
     
+    // Inicializar AOS
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+    });
+
+    // Inicializar tooltips de Bootstrap
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Mostrar todas las clases al inicio
+    $('.clase').show();
+
     // Manejar clics en los botones de filtro
     $('.filtro-btn').click(function() {
-      const target = $(this).data('target');
-      
-      // Remover clase active de todos los botones
-      $('.filtro-btn').removeClass('active');
-      
-      // Agregar clase active al botón clickeado
-      $(this).addClass('active');
-      
-      // Ocultar todas las secciones
-      $('.clase-section').hide();
-      
-      // Mostrar la sección correspondiente
-      $(target).show();
-      
-      // Scroll suave a la sección
-      $('html, body').animate({
-        scrollTop: $(target).offset().top - 100
-      }, 500);
-
-      // Recalcular layout de Masonry para la sección activa
-      $(target).find('.galeria-clases').masonry('layout');
+        const target = $(this).data('target');
+        
+        if (target === 'todos') {
+            $('.clase').show();
+        } else {
+            $('.clase').hide();
+            $(`#${target}`).show();
+        }
     });
 
     // Efecto hover en las tarjetas
@@ -181,7 +184,4 @@ $(document).ready(function () {
       gutter: 20
     });
   });
-
-  // Mostrar todas las clases al inicio
-  $('.clase').show();
 });

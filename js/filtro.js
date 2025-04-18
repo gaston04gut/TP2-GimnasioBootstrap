@@ -1,9 +1,9 @@
 $(document).ready(function() {
   // Ocultar todas las clases al inicio
-  $('.clase').hide();
+  $('.clase').show();
   
   // Mostrar la primera clase por defecto
-  $('#yoga').show();
+
 
   // Manejar clics en los botones de filtro
   $('.filtro-btn').click(function() {
